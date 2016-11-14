@@ -1,9 +1,9 @@
 {
-  "name": "timeli-fe-2",
+  "name": "timeli-admin",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "DEBUG=timeli-signon node src/server/bin/www",
+    "start": "DEBUG=timeli-admin node src/server/bin/www",
     "prod": "forever start src/server/bin/www",
     "test": "mocha --compilers js:babel-core/register --require ./test/testHelper.js --recursive",
     "test": "mocha",
