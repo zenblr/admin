@@ -1,0 +1,15 @@
+admin30:
+    image: timeli/admin:latest
+    container_name: admin30
+    restart: always
+    environment:
+        - NODE_ENV=production
+        - SDK_REST_URL=metadata.local:9000
+    ports:
+        - "3000:3000"
+    external_links:
+        - metadata30_stress:metadata.local
+    labels:
+        io.timeli.description: "User admin Application"
+        io.timeli.service: "admin"
+        io.timeli.applications: "admin"
