@@ -1,0 +1,115 @@
+@import "compass/css3";
+@import "react-datetime";
+
+// Colors
+$color_cararra_approx: #ebebeb;
+$color_cerulean_approx: #00A3E0;
+$color_corn_approx: #E0A900;
+$color_gray_approx: #818181;
+$color_iron_approx: #d7d7d7;
+$color_masala_approx: #3d3d3d;
+$color_oslo_gray_approx: #7F8A92;
+$color_silver_approx: #bcbcbc;
+$color_celeste_approx: #cdcdcd;
+$color_alto_approx: #dedede;
+$color_bombay_approx: #aeb1b3;
+$color_silver_chalice_approx: #B2B2B2;
+$color_rolling_stone_approx: #6F7C84;
+$color_regent_gray_approx: #979EA1;
+$color_seashell_approx: #F1F0F0;
+$color_nevada_approx: #5F6E77;
+$color_mantis_approx: #6CC24A;
+$color_mine_shaft_approx: #333333;
+$white: #fff;
+$color_red_approx: #F40606;
+
+@import "./common";
+
+// Fonts
+$font_0: Lato;
+$font_1: sans-serif;
+
+* {
+  @include box-sizing(border-box);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $color_cararra_approx;
+  color: $color_masala_approx;
+  height: 100%;
+  font-family: $font_0, $font_1;
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.ui.checkbox label {
+  font-size: 12px;
+}
+
+.logo {
+  float: left;
+  height: 54px;
+}
+
+.main {
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  min-width: 1024px;
+  min-height: 600px;
+}
+
+.header {
+  flex: 0 1 auto;
+  align-items: left;
+  position: relative;
+  height: 60px;
+  background-color: white;
+  @include box-shadow(inset 0px -6px 0 0 $color_iron_approx);
+  .nav-section {
+    float: left;
+    height: 60px;
+    margin-right:60px;
+    &.selected {
+      @include box-shadow(inset 0px -6px 0 0 $color_mantis_approx);
+    }
+  }
+}
+
+.nav-content {
+  float: left;
+  margin-top: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  float: left;
+  height: 6px;
+}
+
+.logo-underline {
+  background-color: $color_nevada_approx;
+  float: right; 
+  width: 68px;
+  margin-right: 10px;
+}
+

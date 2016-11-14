@@ -1,0 +1,209 @@
+a {
+  color: #000;
+  text-decoration: none;
+  outline: 0 none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+html {
+  height: 100%;
+}
+body {
+  color: #b1b1b1;
+  font-family: "Lato", Verdana, Tahoma;
+  font-size: 12px;
+  min-width: 1366px;
+}
+.flt_Lt {
+  float: left;
+  display: inline;
+}
+.flt_Rt {
+  float: right;
+  display: inline;
+}
+
+/* ---------------------------------------------------------------------------------*/
+
+
+/* ----------------------- layout ----------*/
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  border: 0px solid red;
+  border-top: 0 none;
+  height: auto;
+}
+
+/*-------------------------------------------*/
+
+
+/* ------------------------- HEADER HERE -------------------*/
+
+#header {
+  margin: 10px 0 0 auto;
+  padding: 55px 0 0 0;
+  position: relative;
+}
+#header .logo {
+  display: block;
+  max-width: 86px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+#header .container {}
+#logo {}
+
+/* --------- NAVIGATION HERE ----------*/
+
+#nav {}
+#nav ul {}
+#nav ul li {}
+#nav ul li a {}
+#nav ul li a span {}
+#nav ul li a:hover {}
+
+/* ---------------------------------------------------------*/
+
+
+/* ------------------------ MAIN CONTENT HERE --------------*/
+
+.main_content {
+  background: url(../images/banner.jpg) no-repeat left center;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  border-top: solid #e7e7e7 5px;
+}
+.main_content .section {
+  max-width: 455px;
+  margin: -5px auto;
+  padding: 2px 0 0px 0;
+  background: #f1f0f0;
+  border-top: solid 5px #70b654;
+  box-shadow: 0px 2px 6px 2px #b3bec2;
+}
+.section .section_logo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px 0px 20px 0;
+}
+.section_form form {
+  display: block;
+}
+.section_form form .username {
+  display: block;
+  margin: 5px auto;
+  padding: 10px 15px;
+  width: 300px;
+  border: solid 1px #d7d7d7;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.section_form form .message {
+  display: block;
+  margin: 5px auto;
+  padding: 5px 5px;
+  width: 300px;
+  font-size: 12px;
+  color: red;
+}
+.noshake {
+  width: auto;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.section_form form .password {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 35px 10px 20px;
+  width: 300px;
+  border: solid 1px #d7d7d7;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 100%;
+  font-size: 14px;
+  color: #888888;
+}
+.section .sign {
+  background: #5f6e77;
+  margin: 0 auto;
+  text-align: center;
+  padding: 22px 0;
+  margin: 30px 0 0 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  border: none;
+}
+.main_content .container {}
+
+/* ---------------------------------------------------------*/
+
+
+/* ------------------ FOOTER HERE --------------------------*/
+
+#footer {}
+#footer .container {}
+.copy {}
+
+/* ---------------------------------------------------------*/
