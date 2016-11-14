@@ -3,7 +3,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('timeli-signon');
+var debug = require('debug')('timeli-admin');
 var http = require('http');
 
 /**

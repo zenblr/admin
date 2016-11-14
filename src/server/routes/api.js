@@ -2,7 +2,7 @@ var express = require('express');
 var querystring = require('querystring');
 var request = require('request');
 var cryptojs = require("crypto-js");
-var debug = require('debug')('timeli-signon');
+var debug = require('debug')('timeli-admin');
 
 const TIMELI_VERSION = 3;
 const TIMELI_DOMAIN  = "demo.timeli.io";
