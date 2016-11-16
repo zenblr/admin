@@ -10,6 +10,6 @@ security-admin30:
     external_links:
         - metadata30_stress:metadata.local
     labels:
-        io.timeli.description: "Security user admin Application"
+        io.timeli.description: "Security admin Application"
         io.timeli.service: "security-admin"
         io.timeli.applications: "security-admin"
