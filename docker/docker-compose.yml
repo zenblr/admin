@@ -1,6 +1,6 @@
-admin30:
-    image: timeli/admin:latest
-    container_name: admin30
+security-admin30:
+    image: timeli/security-admin:latest
+    container_name: security-admin30
     restart: always
     environment:
         - NODE_ENV=production
@@ -10,6 +10,6 @@ admin30:
     external_links:
         - metadata30_stress:metadata.local
     labels:
-        io.timeli.description: "User admin Application"
-        io.timeli.service: "admin"
-        io.timeli.applications: "admin"
+        io.timeli.description: "Security user admin Application"
+        io.timeli.service: "security-admin"
+        io.timeli.applications: "security-admin"

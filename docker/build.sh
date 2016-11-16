@@ -7,4 +7,4 @@ cd $DEV_DIR
 ./node_modules/webpack/bin/webpack.js -p --config webpack.prod.config.js    
 cp src/server/public/static/* $DOCKER_DIR/admin/src/server/public/static/
 cd $DOCKER_DIR 
-docker build -t timeli/admin .
+docker build -t timeli/security-admin .
